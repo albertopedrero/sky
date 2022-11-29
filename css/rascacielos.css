@@ -1,0 +1,157 @@
+/* esto es un comentario */
+
+* {
+
+}
+
+html {
+
+    --color-primario:#1b365d;
+    --color-secundario: #fffbf4;
+    --color-terciario: #5d3754;
+    --color-cuaternario: #f2c75c;
+    --color-fondo-principal:#fffbf4;
+    --color-fondo-secundario: #1b365d;
+    --color-fondo-footer: #f2c75c;
+}
+
+
+body {
+    font-size: 62.5%;
+}
+
+
+header {
+    background-color: var(--color-fondo-secundario);
+}
+header #content {
+    max-width: 1024px;
+    margin: 0 auto;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+}
+header h1 {
+    font-size: 3rem;
+    color: var(--color-secundario);
+}
+
+header nav {
+    font-size: 1rem;
+}
+header nav ul {
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+}
+header nav ul li {
+    padding: 0.5rem;
+}
+header nav ul li a {
+    color: var(--color-cuaternario);
+}
+
+h2 {
+    font-size: 3rem;
+    margin: 3.5rem 0 2.5rem 0;
+    color: var(--color-primario);
+}
+p {
+    font-size: 1.6rem;
+    margin: 1.5rem 0;
+    line-height: 125%;
+    color: var(--color-terciario);
+}
+
+
+ main {
+    max-width: 1024px;
+    margin: 0 auto;
+}
+
+blockquote{
+    max-width: 1024px;
+    margin: 2rem auto;
+    border-left: 10px solid var(--color-terciario);
+    padding: 1rem;
+    font-style: italic;
+}
+
+p.autor {
+    text-align: right;
+}
+
+
+
+
+#top3 {
+    display: flex;
+    justify-content: space-around;
+}
+#top3 li {
+    position: relative;
+}
+#top3 li span {
+    font-size: 2rem;
+    position: absolute;
+    bottom: 0;
+    height: 50px;
+    background-color: #000000c1;
+    color: var(--color-cuaternario);
+    text-align: center;
+    width: 100%;
+    padding-top: 1rem;
+}
+#top3 li img {
+    height: 400px;
+}
+img#portada {
+    width: 100%;
+}
+
+
+footer {
+    max-width: 100%;
+    background-color: var(--color-fondo-footer);
+    color: var(--color-primario);
+}
+
+footer section {
+    max-width: 1024px;
+    margin: 2rem auto;
+    padding: 2rem;
+    text-align: center;
+}
+
+footer section h2 {
+    font-size: 2rem;
+}
+
+@media screen and (max-width: 900px){
+    main {
+        padding: 2rem;
+    }
+    #top3 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    #top3 li {
+        margin: 2rem 0;
+    }
+    #top3 li img {
+        height: auto;
+        width: 400px;
+    }
+    #top3 li span {
+        font-size: 2rem;
+        position: absolute;
+        bottom: 0;
+        height: 50px;
+        background-color: #000000c1;
+        color: var(--color-cuaternario);
+        text-align: center;
+        width: 400px;
+        padding-top: 1rem;
+    }
+}
